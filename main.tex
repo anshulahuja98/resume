@@ -1,0 +1,280 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Anshul}{Ahuja}{ \urlstyle{same}\url{https://github.com/anshulahuja98} \\
+\href{mailto:ahuja.2@iitj.ac.in}{ahuja.2@iitj.ac.in} | (+91) 8076740313
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.30\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+\subsection{IIT Jodhpur}
+\descript{B.Tech. in Computer Science \& Engineering}
+\location{Expected 2021 | Jodhpur, India \\ GPA: \custombold{8.38/10} (upto $2^{nd}$ sem) }
+\sectionsep
+
+\subsection{DPS Dwarka}
+\descript{Class 12}
+\location{2017 | New Delhi, India}
+\location{Percentage: \custombold{95\%}}
+\sectionsep
+
+\subsection{DPS Dwarka}
+\descript{Class 10}
+\location{2015 | New Delhi, India}
+\location{Percentage: \custombold{CGPA 10/10}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/anshulahuja98}{\custombold{anshulahuja98}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/anshul-ahuja}{\custombold{anshul-ahuja}} \\
+Medium://  \href{https://medium.com/@anshul.ahu/}{\custombold{@anshul.ahu}} \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Undergraduate}
+Computer Programming \\
+Discrete Mathematics \\
+Object Oriented Analysis \& Design * \\
+Data Structures \& Algorithms * \\
+{\footnotesize \textit{\textbf{* Ongoing Courses}}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient:}
+\textbullet{}   C/C++  \textbullet{} Python \\
+\location{Familiar:}
+\textbullet{} Javascript 
+\sectionsep
+
+% \subsection{DevOps}
+%  \textbullet{} Continuous Integration \\  \textbullet{} PostgreSQL
+% \sectionsep
+\subsection{Web}
+\location{Technologies:}
+\textbullet{} Django (Python) \\ \textbullet{} MySQL \\ 
+\location{Web Design:}
+\textbullet{} HTML/CSS (Python) \textbullet{} Bootstrap \\ 
+\textbullet{} MDBootstrap \\
+\sectionsep
+
+\subsection{Utilities}
+ \textbullet{} Git \textbullet{} Linux shell utilities \textbullet{} SSH
+\sectionsep
+\subsection{Other Techonologies}
+ \textbullet{} Raspberry PI \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.67\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Open Source Contributor }
+\descript{| \arrowlink{https://github.com/anshulahuja98/spc_portal}{Github} }
+\location \
+\begin{tightemize}
+\item Fixed 1 issue in \arrowlink{https://github.com/systers/sysbot/pull/170}{systers/sysbot} repository.
+\item Fixed 2 issues in  \arrowlink{https://github.com/devlup-labs/gymkhana_portal/search?q=author\%3Aanshulahuja98+is\%3Apr&type=Issues}{devlup-labs/gymkhana\_portal} repository.
+\item Other Merged Pull Requests in Misc Projects \arrowlink{https://github.com/search?p=1&q=is\%3Apr+author\%3Aanshulahuja98&type=Issues}{Pull Requests}.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{SPC Portal}
+\descript{| MVC Based Portal for Student Placement Cell}
+\location{Deployed at  \arrowlink{spc.iitj.ac.in}{spc.iitj.ac.in}| Open Sourced \arrowlink{https://github.com/anshulahuja98/spc_portal}{Github}}
+\begin{tightemize}
+\item Automate end to end the placement procedure for students and recruiters
+\item Used by \custombold{250+} students and in 2018-19 for placement procedure
+% \item Worked under overall SPC team of \custombold{25+} people
+\item Backend developed in \custombold{Django} framework based on \custombold{Python}
+
+% \item Features - 
+% \begin{bulletedlist}
+
+
+%     \item Resume upload, verification. 
+%     \item Applying for Job and Intern Offers
+%     \item Role based admin access to SPC Team members 
+    
+% \end{bulletedlist}
+\end{tightemize}
+
+\runsubsection{TA Portal}
+\descript{| MVC Based Portal for managing Teaching Assistant Assignment}
+\location{ Open Sourced \arrowlink{https://github.com/anshulahuja98/ta_portal}{Github}}
+\begin{tightemize}
+\item Automate monthly report generation for Teaching Assistants
+\item Backend developed in \custombold{Django} framework based on \custombold{Python}
+\end{tightemize}
+
+\runsubsection{IITJ Info Bot}
+\descript{ | Chat Bot | Microsoft code.fun.do Hackathon | Microsft Imagine Cup}
+\location{Currently Not deployed }
+\begin{tightemize}
+\item A chat bot deployed on Facebook Messenger for day-day info
+\item RFID Based payment module connected to the chatbot on Raspberry Pi.
+\item Technologies: \custombold{Microsoft Azure} \custombold{nodejs},  \custombold{MySQL}, \custombold{Bot Builder Framework}, \custombold{LUIS}
+\item Developed as part of Microsoft Hackathon ( code.fun.do ) 
+\end{tightemize}
+
+\runsubsection{Pi Payments}
+\descript{ | IITJ Info Bot | Raspberry PI }
+\location{ Open Sourced \arrowlink{https://github.com/anshulahuja98/pi_payments}{Github}}
+\begin{tightemize}
+\item RFID Based payment module devloped on Raspberry PI connected to the chatbot (IITJ Info Bot).
+\end{tightemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements} 
+\begin{tabular}{rll}
+2018	     & \custombold{Finalist (Online)}   Among top 3 teams out of 53 teams, Microsoft Code.Fun.Do (Online Round). Cash Price 2k INR. \\
+2018	     & \custombold{2nd Runner up} (OnCampus Round)   out of 11 teams, Microsoft code.fun.do OnCampus 24 hr hackathon. Cash Price 5k INR. \\
+2017        & JEE Advanced AIR \custombold{2879}, JEE Mains AIR \custombold{2820} Among \custombold{Top 0.2 \%} \\
+2016	     & \custombold{KVPY Scholar} Kishore Vaigyanik Protsahan Yojana (KVPY)  SX Scholar  \\
+\end{tabular} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     POSITIONS OF RESPONSIBILITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Positions of Responsibility} 
+
+\runsubsection{Student Placement Cell}
+\descript{| Web Development Head }
+\location{Aug 2018 – Present | IIT Jodhpur}
+\begin{tightemize}
+\item Created Web Portal to handle Student Placements \custombold{SPC Portal} \small{(Details Above)}
+\item Worked under overall SPC team of \custombold{25+} people
+\end{tightemize}
+
+\runsubsection{Quiz Club}
+\descript{| Captain}
+\location{Aug 2018 – Present | IIT Jodhpur}
+\begin{tightemize}
+\item Conducted Open and internal Quizzing sessions
+% \item  Led a team of 12 to Nihilanth
+\end{tightemize}
+
+\runsubsection{Ignus Inter College Fest}
+\descript{| Web Development Head }
+\location{Aug 2018 – Present | IIT Jodhpur, India}
+\begin{tightemize}
+\item Maintained and Redesigned IGNUS 2018 Website
+\item Worked under overall Core team of \custombold{40+} people.
+% \item Collaborated with App Development.
+\end{tightemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXTRACURRICULAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extracurricular} 
+\begin{bulletedlist}
+\item Member of newly formed open-source student group called \arrowlink{https://github.com/devlup-labs}{Devlup Labs} at IIT Jodhpur.
+\item Tech Blog author Medium://  \href{https://medium.com/@anshul.ahu/}{\custombold{@anshul.ahu}} \\
+\item Participated in inter \custombold{IIT-IIM Quiz} Nihilanth at \custombold{IIM Ahmadabad}
+\item SpeedCubing Enthusiast
+\item IOT Projects on Raspberry Pi 
+\end{bulletedlist}
+\end{minipage} 
+\end{document}  \documentclass[]{article}
