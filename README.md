@@ -1,3 +1,3 @@
 # resume
-Checkout my [resume](https://github.com/anshulahuja98/resume/blob/master/Anshul%20Ahuja.pdf), open for hiring!
+Checkout my [resume](https://github.com/anshulahuja98/resume/blob/master/Anshul%20Ahuja.pdf), currently not available for hiring!
 
