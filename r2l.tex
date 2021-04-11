@@ -1,0 +1,494 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Anshul}{Ahuja}{ \urlstyle{same}\url{https://github.com/anshulahuja98} \\
+\href{mailto:ahuja.2@iitj.ac.in}{anshul.ahu@gmail.com} | (+91) 9873481338 \\
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{minipage}[t]{0.67\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Microsoft}
+\descript{| Software Engineer Intern }
+\location{May - July 2020 | Azure Backup}\
+\begin{tightemize}
+\item Developed an E2E mechanism for taking App Consistent backups of workload associated CSI PersistentVolumes and cross cluster restore in Kubernetes(AKS).
+\item Made contributions to the Azure Disk CSI driver.
+\end{tightemize}
+
+\runsubsection{Microsoft}
+\descript{| Software Engineer Intern }
+\location{May - July 2019 | MSIDC Hyderabad | Azure Backup} 
+\begin{tightemize}\item Developed complete Backup and Restore solutions for PaaS (Azure hosted) Open-source databases(PostgreSQL, MariaDB) 
+\item Experimentation using \custombold{Azure functions (serverless)} as hosting environment.
+% \item Received a \custombold{return offer} to join Microsoft.
+\end{tightemize}
+
+\runsubsection{Devlup Labs }
+\descript{| Co-founder \& Lead | \arrowlink{https://devlup-labs.github.io/#/}{Website} }
+\location{2018 - Present | IIT Jodhpur} 
+\begin{tightemize}
+\item Spearheaded the growth of \custombold{open-source enthusiasts'} student group at IIT Jodhpur, organising and hosting sessions/webinars on various technologies.
+\item Mentored a team of \custombold{25+ students} managing \custombold{10+ projects} from ideation, design, development to deployment 
+
+\end{tightemize}
+
+\runsubsection{Freelancing }
+\descript{| \arrowlink{https://www.upwork.com/o/profiles/users/~0159af9fc299f18fd2/}{Upwork} }
+\begin{tightemize}
+\item Custom work on Kubernetes Dashboard for client on
+Upwork
+\end{tightemize}
+
+\runsubsection{Open Source Contributor }
+\descript{| \arrowlink{https://github.com/anshulahuja98/spc_portal}{Github} }
+\begin{tightemize}
+\item Contributed to various open-source repos, merged PRs 
+\arrowlink{https://github.com/pulls?utf8=\%E2\%9C\%93&q=is\%3Amerged+is\%3Apr+author\%3Aanshulahuja98+}{Github}
+\item Contributions to \arrowlink{https://github.com/kubernetes/dashboard/issues?utf8=✓&q=author\%3Aanshulahuja98+}{kubernetes/dashboard}
+
+% \item Fixed issues in \arrowlink{https://github.com/systers/vms/pulls/anshulahuja98}{systers/sysbot} and \arrowlink{https://github.com/systers/sysbot/pull/170}{systers/vms} repositories.
+% \item Merged Pull Requests in  \arrowlink{https://github.com/thibmaek/awesome-raspberry-pi/pulls?utf8=\%E2\%9C\%93&q=is\%3Apr+is\%3Aclosed+author\%3Aanshulahuja98}{thibmaek/awesome-raspberry-pi} repository.
+% \item Developer at  \arrowlink{https://github.com/devlup-labs}{devlup-labs}.
+% \item Other Merged \arrowlink{https://github.com/search?p=1&q=is\%3Apr+author\%3Aanshulahuja98&type=Issues}{Pull Requests}  in Misc Projects.
+
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{}
+\section{Projects}
+\vspace{}
+\runsubsection{BTech Project (*Ongoing) }
+\descript{| Federated Learning Edge-IoT Infra}
+\location{Mentor: Dr Suman Kundu}
+\begin{tightemize}
+\item Developing a distributed machine learning framework (federated learning) based on tensorflow federated to facilitate Edge enabled low power devices.
+\end{tightemize}
+
+\runsubsection{BTech Project }
+\descript{| Distributed systems | Open source Contribution}
+\location{Python Library  \arrowlink{https://pypi.org/project/python3-crdt/}{PyPI}| Published \arrowlink{https://ieeexplore.ieee.org/document/9049535}{IEEE} | Mentor: Dr Subhajit Sidhanta}
+\begin{tightemize}
+\item Poster Title: 'Edge Applications: Just Right Consistency' presented in (SRDS) 39th IEEE International Symposium on Reliable Distributed Systems(Core-A) 
+% 2019 at Lyon, France. Published on IEEE
+\item Developed an open-source python library for supporting Conflict-free Replicated Datatypes(CRDTs) hosted on Python's package manager (PyPI).
+\item Contributed to open-source efforts of  by creating kubernetes based deployment for it. K8s deployment  forked by Antidote} 
+\end{tightemize}
+
+\runsubsection{SPC Portal}
+\descript{| MVC Based Portal for Student Placement Cell}
+\location{Deployed at  \arrowlink{spc.iitj.ac.in}{spc.iitj.ac.in} |  Open-Sourced \arrowlink{https://github.com/anshulahuja98/spc_portal}{Github}}
+\begin{tightemize}
+\item Developed portal in Django (Python) to automate and streamline end to end placement procedure  for  \custombold{900+} students and recruiters in 2018-20.
+% \item Automated end to end the placement procedure for \custombold{250+} students and recruiters in 2018-19.
+% \item Boosted productivity of  \custombold{250+} students and recruiters in 2018-19 by making the placement procedure hasslefree
+
+% \item Worked with overall SPC team of \custombold{25+} people
+% \item Backend developed in \custombold{Django} framework based on \custombold{Python}
+
+% \item Features - 
+% \begin{bulletedlist}
+
+
+%     \item Resume upload, verification. 
+%     \item Applying for Job and Intern Offers
+%     \item Role based admin access to SPC Team members 
+    
+% \end{bulletedlist}
+\end{tightemize}
+
+\runsubsection{Disaster Chain}
+\descript{| IOT | Microsoft AXLE 2019 }
+\location{  Demo Video \arrowlink{https://www.youtube.com/watch?v=_PcUHHltb04}{Youtube} | Open Sourced \arrowlink{https://github.com/anshulahuja98/Codefundo-18-IITJ}{Github} | News Article \arrowlink{https://timesofindia.indiatimes.com/city/bengaluru/ai-iot-power-student-projects-to-manage-disasters/articleshow/67858079.cms}{TOI} } 
+\begin{tightemize}
+\item A \custombold{distributed IoT solution} built using Raspberry Pi \& Node MCUs for disaster detection \& early warning systems for cloud offloading of disaster management.
+\item Trained a model using Azure Custom Vision service 
+exported to Android app to predict skin diseases from pictures offline.
+% \item Built using Raspberry Pi and Node MCU units.
+
+\end{tightemize}
+
+% \runsubsection{Freelancing Solutions}
+% \descript{| MVC Based Portal | Software Engineering Project(CS223) }
+% \location{ Open Sourced \arrowlink{https://github.com/anshulahuja98/freelancing-solutions}{Github}}
+% \begin{tightemize}
+% \item Followed TDD(Test driven development) and other software engineering principals
+% \item Automated monthly report generation for Teaching Assistants by building a portal on \custombold{Django} framework based on \custombold{Python}
+% \end{tightemize}
+
+% \runsubsection{Financial Engineering }
+% \descript{ \arrowlink{https://github.com/ChakshuGupta13/technical-indicators-backtesting}{Github} | \arrowlink{https://github.com/anshulahuja98/portfolio-optimisation}{Github} }
+% % \location{ \arrowlink{https://github.com/anshulahuja98/pi_payments}{Github}}
+% \begin{tightemize}
+% \item Experimented with various market technical indicators whilst developing a new indicator backtested on market data.
+% \item Portfolio optimization of tech stocks listed on NASDAQ.
+% \end{tightemize}
+
+% \runsubsection{Voting Vader}
+% \descript{| Blockchain | IoT | Microsoft Code.fun.do++ '19 }
+% \location{  Demo Video \arrowlink{https://www.youtube.com/watch?v=oYs3sAa2E6w}{Youtube} | Open Sourced \arrowlink{https://github.com/anshulahuja98/CFD-19-IITJ}{Github}  } 
+% \begin{tightemize}
+% \item An \custombold{IoT based EVM} built on Raspberry Pi using \custombold{Azure Blockchain Service} as the backend serving through REST APIs and hardware authentication using RFID.
+% % \item Built using Raspberry Pi and Node MCU units.
+
+% \end{tightemize}
+
+% \runsubsection{TA Portal}
+% \descript{| MVC Based Portal for managing Teaching Assistants}
+% \location{ Open Sourced \arrowlink{https://github.com/anshulahuja98/ta_portal}{Github}}
+% \begin{tightemize}
+% \item Automated monthly report generation for Teaching Assistants by building a portal on \custombold{Django} framework based on \custombold{Python}
+% \end{tightemize} 
+
+
+% \runsubsection{IITJ Info Bot}
+% \descript{ | ChatBot | Microsoft code.fun.do | Microsoft Imagine Cup}
+% \location{Submission Video \arrowlink{https://www.youtube.com/watch?v=rJPxzfWdTps}{Youtube} | \arrowlink{https://github.com/anshulahuja98/pi_payments}{Github}}
+% \begin{tightemize}
+% \item A chatbot deployed on \custombold{Facebook Messenger} for day-day college related info
+% \item \custombold{RFID} based payment module connected to the chatbot made on \custombold{Raspberry Pi.}
+% % \item Technologies: \custombold{Microsoft Azure}, \custombold{nodejs},  \custombold{MySQL}, \custombold{Bot Builder Framework}, \custombold{LUIS}
+% \end{tightemize}
+
+
+
+
+% \runsubsection{Pi Payments}
+% \descript{ | IITJ Info Bot | Raspberry PI }
+% \location{ Open Sourced \arrowlink{https://github.com/anshulahuja98/pi_payments}{Github} | Submission Video \arrowlink{https://www.youtube.com/watch?v=rJPxzfWdTps}{Youtube} }
+% \begin{tightemize}
+% \item RFID Based \custombold{IOT} payment module developed on \custombold{Raspberry PI} connected to the chatbot (IITJ Info Bot).
+% \end{tightemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACHIEVEMENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{}
+\section{Achievements} 
+\begin{tabular}{rll}
+2019      & \custombold{Runner up, Microsoft Code.Fun.Do++} at IIT Jodhpur \\
+2019	   & \custombold{$2^{nd}$ Runner up},  \custombold{Microsoft AXLE}(Code.Fun.Do++ National) out of 21 teams  \\
+            & Prize money \custombold{1 Lakh INR} and \custombold{5000 USD Azure Grant} under AI for Good \\
+2018	   & \custombold {Winner, Microsoft Code.Fun.Do++} at IIT Jodhpur \\
+2018	   & \custombold{National finalists} in \custombold{Microsoft Imagine Cup, India} \\
+2018	   & \custombold{$2^{nd}$ Runner up (OnCampus Round)} Microsoft code.fun.do hackathon \\
+% 2018	   & \custombold{Finalist (Online)}    \custombold{top 3 teams out of 53 teams}, Microsoft Code.Fun.Do \\
+% 2017      & JEE Advanced AIR \custombold{2879}, JEE Mains AIR \custombold{2820} Among \custombold{Top 0.2 \%} \\
+2016	   & \custombold{KVPY Scholar} Kishore Vaigyanik Protsahan Yojana (KVPY)  SX Scholar  \\
+%  2017	   & \custombold{Gold Medalist} DPS Dwarka  \\
+
+\end{tabular} 
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     POSITIONS OF RESPONSIBILITY
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \vspace{}
+% \section{Positions of Responsibility} 
+% \begin{bulletedlist}
+% \item 
+% \runPORsubsection{Student Placement Cell}
+% \PORdescript{| Web Development Head }
+% % \PORlocation{Aug 2018 – Present | IIT Jodhpur}
+% % \begin{tightemize}
+% % \item Created Web Portal to handle Student Placements \custombold{SPC Portal} \small{(Details Above)}
+% % \item Worked with overall SPC team of \custombold{25+} people
+% % \end{tightemize}
+% \item
+% \runPORsubsection{Quiz Club}
+% \PORdescript{| Captain}
+% % \PORlocation{Aug 2018 – Present | IIT Jodhpur}
+% % \begin{tightemize}
+% % \item Conducted Open and internal Quizzing sessions
+% % \item Led a team of \custombold{13} to \custombold{ Inter IIT Cultural Meet'19 }
+% % \end{tightemize}
+% \item
+% \runPORsubsection{Ignus Inter College Fest}
+% \PORdescript{| Web Development Head }
+% % \PORlocation{Aug 2018 – Present | IIT Jodhpur, India}
+% % \begin{tightemize}
+% % \item Maintaining and designing Ignus 2019 Website \arrowlink{https://ignus.org/}{ignus.org} and server.
+% % \item Working with overall Core team of \custombold{40+} people.
+% % % \item Collaborated with App Development.
+% % \end{tightemize}
+
+% \end{bulletedlist}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.30\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+\runsubsection{IIT Jodhpur} \\
+\descript{B.Tech. in Computer Science \\ \& Engineering}
+\location{Expected 2021  | Jodhpur, India \\ GPA: \custombold{8.67/10} (upto $5^{th}$ sem) }
+\sectionsep
+
+% \vspace{}
+% \section{Education} 
+% \subsection{IIT Jodhpur}
+% \descript{Pre-final year B.Tech. in Computer Science \& Engg}
+% \location{Expected 2021 | Jodhpur, India \\ GPA: \custombold{8.67/10} (upto $5^{th}$ sem) }
+% \sectionsep
+% \section{Education} 
+% \subsection{Indian Institute of Technology, Jodhpur}
+% \descript{Pre-final year B.Tech. in Computer Science \& Engg}
+% \location{Expected 2021 | Jodhpur, India \\ GPA: \custombold{8.67/10} (upto $5^{th}$ sem) }
+% \sectionsep
+
+
+\runsubsection{DPS Dwarka} \\
+
+\descript{Class 12 | CBSE}
+\location{2017 | New Delhi, India}
+\location{Percentage: \custombold{95\%}}
+\sectionsep
+
+% \subsection{DPS Dwarka}
+% \descript{Class 10 | CBSE}
+% \location{2015 | New Delhi, India}
+% \location{Percentage: \custombold{CGPA 10/10}}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/anshulahuja98}{\custombold{anshulahuja98}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/anshul-ahuja}{\custombold{anshul-ahuja}} \\
+Medium://  \href{https://medium.com/@anshul.ahu/}{\custombold{@anshul.ahu}} \\
+\href{https://scholar.google.com/citations?hl=en&user=jPd1-ygAAAAJ}{\custombold{Google Scholar}}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Undergraduate}
+% Computer Programming \\
+% Discrete Mathematics \\
+Object Oriented Analysis \& Design  \\
+Data Structures \& Algorithms  \\
+% Theory of Computation  \\
+% Computer Architecture and Org \\
+Software Engineering  \\
+Operating Systems \\
+% Compiler Design \\
+Algorithm Design and Analysis \\
+% Data Communication \\
+Quantum Information \\
+Computer Networks* \\
+Database Systems* \\
+Artificial Intelligence* \\
+Financial Engineering* \\
+
+{\footnotesize \textit{\textbf{* Ongoing Courses}}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+% \location{Proficient:}
+\textbullet{}   C/C++  \\
+% \location{Intermediate:}
+\textbullet{} C\# 
+\textbullet{} Python 
+\textbullet{} Javascript 
+
+\sectionsep
+
+% \subsection{DevOps}
+%  \textbullet{} Continuous Integration \\  \textbullet{} PostgreSQL
+% \sectionsep
+\subsection{Web}
+% \location{Technologies:}
+\textbullet{} Django (Python) \\ \textbullet{} MySQL 
+\textbullet{} PostgreSQL \\  \\ \textbullet{} REST \\ 
+% \location{Web Design:}
+\textbullet{} HTML/CSS \textbullet{} Bootstrap \\ 
+% \textbullet{} MDBootstrap \\
+\sectionsep
+
+% \subsection{Utilities}
+%  \textbullet{} Git \textbullet{} Linux shell utilities
+% \sectionsep
+\subsection{Technologies}
+\textbullet{} Git \textbullet{} Linux shell utilities \\
+\textbullet{} Raspberry PI \\
+\textbullet{} Azure(Blob, Cosmos etc) \\
+\textbullet{} Azure Functions \\
+\textbullet{} Docker  \\
+\textbullet{} \custombold{Kubernetes \& AKS} \\
+
+\sectionsep
+
+
+
+% \section{Initiatives}
+% \sectionsep
+% Spearheaded the growth of \custombold{open-source enthusiasts' student group \arrowlink{https://devlup-labs.github.io/#/}{Devlup Labs}} at IIT Jodhpur. Conducted and hosted sessions and webinars on various technologies for students. Launched and mentored 10+ projects.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+
+\newpage
+
+
+\begin{minipage}[t]{0.67\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     POSITIONS OF RESPONSIBILITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{}
+\section{Positions of Responsibility} 
+\begin{bulletedlist}
+\item 
+\runPORsubsection{Student Placement Cell}
+\PORdescript{| Web Development Head }
+% \PORlocation{Aug 2018 – Present | IIT Jodhpur}
+% \begin{tightemize}
+% \item Created Web Portal to handle Student Placements \custombold{SPC Portal} \small{(Details Above)}
+% \item Worked with overall SPC team of \custombold{25+} people
+% \end{tightemize}
+\item
+\runPORsubsection{Quiz Club}
+\PORdescript{| Captain}
+% \PORlocation{Aug 2018 – Present | IIT Jodhpur}
+% \begin{tightemize}
+% \item Conducted Open and internal Quizzing sessions
+% \item Led a team of \custombold{13} to \custombold{ Inter IIT Cultural Meet'19 }
+% \end{tightemize}
+\item
+\runPORsubsection{Ignus Inter College Fest}
+\PORdescript{| Web Development Head }
+% \PORlocation{Aug 2018 – Present | IIT Jodhpur, India}
+% \begin{tightemize}
+% \item Maintaining and designing Ignus 2019 Website \arrowlink{https://ignus.org/}{ignus.org} and server.
+% \item Working with overall Core team of \custombold{40+} people.
+% % \item Collaborated with App Development.
+% \end{tightemize}
+
+\end{bulletedlist}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXTRACURRICULAR
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extracurricular} 
+\begin{bulletedlist}
+% \item Spearheaded the growth of \custombold{open-source enthusiasts' student group \arrowlink{https://github.com/devlup-labs}{Devlup Labs}} at IIT Jodhpur.
+\item Participated in inter \custombold{IIT-IIM Quiz} Nihilanth'18 at \custombold{IIM Ahmadabad}
+\item Participated in \custombold{ Inter IIT Cultural Meet} '19 at \custombold{IIT Roorkee} and '20 at \custombold{IIT Bombay}
+% \item Core Member of Robotics and Science Club 
+% \item \custombold{IOT} Projects on \custombold{Raspberry Pi}
+\item Conducted various sessions/talks for freshmen \& sophomores at IITJ on version control, automation, IoT etc.
+% \item Gave a talk on \custombold{Raspberry Pi, IOT} and \custombold{Automation} to $1^{st}$  and $2^{nd}$ year students
+
+\end{bulletedlist}
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.30\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Hobbies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{HOBBIES}
+% \subsection{Programming}
+% \location{Proficient:}
+\textbullet{} SpeedCubing Enthusiast  \\
+\textbullet{} Tech Blogger Medium:  \href{https://medium.com/@anshul.ahu/}{\custombold{@anshul.ahu}} \\
+\textbullet{} Swimming 
+\sectionsep
+
+
+\end{minipage} 
+
+\end{document}  \documentclass[]{article}
